@@ -1,0 +1,108 @@
+heading
+patgaph
+formating
+img
+marquee
+tables
+DAY-1
+html list tags->ordered,unorderd,define list->3 parts
+ordered list->uesd to keep the related items in order a long with numbers
+                <ol> it will generate the numbers on the webpage  </ol>
+                <li> keep the content </li>---->list item
+                ---when we add number manually and then we need to remove any element then numbers are not updated manually thats why we using order list.
+   Attributes--->type,start
+type="A","a","i","I";   
+start="7"---->this attribute always expect number only.if we want to start with any alpbet then ew use number like if e want start with d then we can write 4 in the value 
+
+
+it support nested list.--->
+==================================================================================================================
+
+
+DAY-2
+unorder list-----> used to keep the list in symbol type.
+it indictrd with -->ul
+it uses 3 types of symbols->
+1.disc    2.circle     3.square
+
+define list--->used to define the title and their description.
+<dl>--->we need to write dt and dd in <dl> here dl---->define list.
+<dt>---->define title
+<dd>---->define description
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+HTML ENTITES
+--used to add the spl symbols on a webpage,that are not provide in the keyboard.
+ex: currency symblo,emojies,etc......
+ex: &copy;
+    &dollar;
+    &trade;
+    &dagger;
+    &deg;
+    &gt;
+    &dollar;
+some symbol have ->entity name with entity number aslo
+but some have only entity numbers -> indian currency symbol---&#8377
+interview questions:
+1.how to print the tag name on the webpage----> we need to use entities ex:&lt;h1&gt;
+2.how to add the blank space on a webpage----> &nbsp;(when we want add more num cht space then we need to tht many times.)
+ex:<p>micro&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;soft</p>
+==================================================================================================================================================
+
+DAY-3
+HTML FORMS:-collect the data from the user ,send to the server
+            - to build the forms html provide <form> tag.
+form elements:
+input,select,textarea,datalist,lable(create the input box title.)
+-when we want to do the curd operations we need to use the forms.
+-name attribute is used to send the inputbox values to server.
+-maxlength is used to restrict the data to enter with specific range.(not for number type).
+-to remove the application data we can use  <input type="reset" value="clear">
+
+---when you want to add slide bar in a webpage we need to use input type = range-:<input type="range" min="100" max="500">
+-to create a dropdown button we need to use the <select></select> tag
+ex:-
+            <select>
+                
+                <option>hyd</option>
+                <option>bang</option>
+                <option>vizag</option>
+                <option>chennai</option>
+                <option>pune</option>
+            </select>
+    - to send the shortcut name to the website ,then we need to add the value="shorcutname" in option ele,in select
+
+==================================================================================================================
+29/10/26
+
+<head>
+
+</head>
+
+in head we use 6 types of tags.
+1.<title>-->  used to define the page title.the title displaed in the browser tab.
+                ex:-<title>Document for python full stack </title>
+
+2.link tag:- when we want to connect the external css files then we use link tag.
+                ex:- <link rel="stylesheet" href="../css/baby4" >
+             to add fav icon we use the link tag.
+             fav icon:- it is a small image diplayed beside the title.
+             ex:- <link rel="icon" href="../images/baby4.jpg">
+
+3.style tag:-used to add the css code internally.
+            ex:- <style>  </style>
+4.script tag:- used to define the java code internally and we can also connect the external javascript file.
+            ex:-<script>
+                     let a=2+4;
+                     document.write(a);
+                </script> 
+5.base tag:-used to simplify the image urls.
+        <head>
+        <base href="../images/">
+        <head>
+        <body>
+            <img src="baby1.jpg">
+        </body>
+=====================================================================================================================
+
+
+    

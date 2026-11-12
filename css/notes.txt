@@ -1,0 +1,121 @@
+css3-cascading style sheet -by using these we can style ,design,layouts.
+we can write the css in 3 ways:-
+        inline css :- write the css code in side html element. using style attribute
+        internal css :-write the code with in the html file in head part.using <style> tag.
+        external css :-write the  css code in seperate file with extension of .css ex:-demo.css.
+                       we can connect this file to html file using <link> tag.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Selectors(FAQ) :-used to select the html element for styling
+-->to select the html elements  we have num.of selectors:
+            --simple selectors
+            --relational selectors
+            --pseudo-class selectors
+            --pseudo-element selectors
+            --attribute selector
+--->simple selectors:-used to select the elements based on their ele name,id name,class name. 
+                      when u use id selector we need to write like #idname.
+                      when we use class selector we need to write like .classname. 
+=================================================================================================
+properties:
+color properties- used to set the text color.
+ text properties
+ background properties
+ font properties
+ padding properties
+ border properties
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+text-align:values - to align the text (center,left,right,justify)
+        ex:text-align: justify;
+            text-align: center;
+            text-align: left;
+            text-align: right;
+text-transform: to change the text to upper case or lower case or captalize.
+        ex:text-transform: capitalize;
+            text-transform: lowercase;
+            text-transform: uppercase;
+text-indent: add space before the paragraph starting
+        ex:text-indent: 50px;
+text-shadow: to add the shdow to the text
+        syn: text-shadow:horizantal vertical blur color;
+        ex:  text-shadow: 5px 2px 3px blue;
+        -->to add shadow all sides we need give lilke this:text-shadow: 0px 0px 3px blue;
+        --> to add multiple shadows we can use like this-->text-shadow: 5px 2px 1px blue,4px 6px 2px green;
+box-shadow: to add the shadow to the element.
+        sys:box-shadow:horizantal vertical blur color:
+        ex: box-shadow: 5px 3px 3px black;
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+DATE:- 09-11-26
+padding:- to make the wide space inside element.
+        padding:5px -->(apply all sides) 
+        padding: 20px 100px(20px -->apply to top and bottom 100px -->left ,right)
+        padding:20px 50px 80px 100px;(top,right,bottom,left)
+        padding-right:50px;
+margin:- add the wide space around element(outside of the element.)
+        margin:50px;
+        margin:20px 50px;(top,bottom-20 and right,left-50)
+        margin-top:50px;
+        to keep the container center of page:- 
+        margin: auto;
+        margin:50px auto;
+border:-
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+position properties:-(positionproperty.html)
+        position:static (it is default value for position)
+        position:relative 
+        position:absolute
+        position:fixed
+        position:sticky
+-->when you want to move the any child element .then parent element position should be --> position:relative.
+    child element position should be --> position:absolute;
+    for  position: absolute; we need to use left,right,top,bottom
+        ex:-position: absolute;
+            left: 200px;
+            top: 50px;
+        ex:-position: absolute;
+             right: 0px;
+             top: 200px;
+--> position:fixed; --->used for inline elements that means it change the width of the element based on the content of the elemnt.
+        ex: position: fixed;
+            top: 0px;
+-->position:sticky; --->these are used for blocklo elements that means it does't effect the element width
+        ex: position: sticky;
+            top: 0px;
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+DATE:-10-11-26
+
+Display properties:- 
+        -->it contains multiple values that are:- inline,block,inline block,none,flex,grid.
+    html ele dived into 2 types 
+                block level elements(strat at new lilne)
+                inline elements(start in same line)
+     --->Display properties are used to convert the inline elements into block level element and
+         block level element  into inline elements.
+
+        Display: block:- used to convert inline element into block level elements.
+                ex:- span{
+                                background-color: blanchedalmond;
+                                color: black;
+                                padding: 10px;
+                                margin: 10px;
+                                display: block;
+                                width: 100px;
+                                box-shadow: 4px 4px 4px black;
+                                text-align: center;
+                                border-radius: 10px;
+                        }
+        display: inline :- used to convert block level elements into inline elements.
+                -->it does not support width property 
+                ex:-         p{  background-color:aqua;
+                                color: black;
+                                padding: 10px;
+                                margin: 10px;
+                                display: inline;
+                                box-shadow: 4px 4px 4px black;
+                                text-align: center;
+                                border-radius: 10px;}
+        display: inline bock:- 
+        display: none:- used to hide the content in the webpage.
+        display:flex:- used to arrange the elements in rows or columns.
+                --> this property always used in parent level.
+                
+

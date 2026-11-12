@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <form>
+        <div>
+                <label>UserName</label>
+        </div>
+        <div>
+            <input placeholder="enter username" type="text" name="username" required maxlength="12" minlength="5">
+        </div>
+        <div>
+            <label>password</label>
+        </div>
+        <div>
+            <input placeholder="password" type="password" required name="password">
+        </div>
+        <div>
+            <lable>Email</lable>
+        </div>
+        <div>
+            <input type="email" placeholder="enter email" required name="email" >
+        </div>
+        <div>
+            <label>contact number</label>
+        </div>
+        <div>
+            <input type="number" required placeholder="enter phn num" maxlength="10" minlength="10">
+        </div>
+        <div>
+            <label>choose age</label><br>
+            <input type="range" min="100" max="500">
+        </div>
+        <div>
+            <label>enter DOB</label><br>
+            <input type="date" name="date">
+        </div>
+        <div>
+            <label>enter time</label><br>
+            <input type="time" name="time">
+        </div>
+        <div>
+            <label>enter file</label><br>
+            <input type="file" name="file" multiple> 
+        </div>
+        <div>
+            <label>choose gender</label>
+        </div>
+        <div>
+            <input type="radio" name="male" value="male"> <label>male</label>
+            <input type="radio" name="female" value="female"> <label>female</label>
+            <input type="radio" name="others" value="others"> <label>othres</label>
+        </div>
+        <div>
+            <label>choose course</label>
+        </div>
+        <div>
+            <input type="checkbox" name="course" value="java"> <label>java</label> <br>
+            <input type="checkbox" name="course" value="python"> <label>python</label> <br>
+            <input type="checkbox" name="course" value="html"> <label>html</label> <br>
+            <input type="checkbox" name="course" value="database"> <label>database</label> <br>
+            <input type="checkbox" name="course" value=".net"> <label>.net</label> <br>
+            <input type="checkbox" name="course" value="aws"> <label>aws</label> <br>
+        </div>
+        
+        <div>
+            <input type="submit" value="login" > <input type="reset" value="clear data">
+        </div>
+
+    </form>
+    <form>
+        <div>
+            <label>comments</label>
+        </div>
+        <div>
+            <textarea name="textarea" placeholder="write ur comments" cols="10" rows="4">
+            </textarea>
+        </div>
+         <div>
+            <label>choose city:</label>
+        </div>
+        <div>
+            <select name="city">
+                <option disabled selected>---choose city---</option>
+                <option>hyd</option>
+                <option>bang</option>
+                <option>vizag</option>
+                <option>chennai</option>
+                <option>pune</option>
+            </select>
+        </div>
+        <div>
+            <label>choose course:</label>
+        </div>
+        <div>
+            <select>
+                <optgroup label="backend">
+                    <option>python</option>
+                    <option>java</option>
+                    <option>.net</option>
+                </optgroup>
+                
+                <optgroup label="frontedn">
+                    <option>html</option>
+                    <option>css</option>
+                    <option>react</option>
+                </optgroup>
+                
+            </select>
+        </div>
+    </form>
+    
+    
+</body>
+</html>
