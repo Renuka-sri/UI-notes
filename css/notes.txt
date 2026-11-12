@@ -117,5 +117,55 @@ Display properties:-
         display: none:- used to hide the content in the webpage.
         display:flex:- used to arrange the elements in rows or columns.
                 --> this property always used in parent level.
-                
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   
+DATE:- 12-11-26
+selector::pseudo-elementname():- to apply the styles for the part of the elements.
+  ::marker
+  ::placeholder
+  ::first-letter
+  ::first-line
+  ::before 
+  ::after
+  ::select
 
+::marker:-
+-> to change the bullets of <ul> and <ol> then we use ::marker.
+-> it works for only list items(bullets and numbers) elements.
+
+::placeholder:-
+-> used to apply the styles for placeholder in input or textarea.
+ex:- input::placeholder{
+        color:red;
+}
+
+::first-letter:-
+-> to apply the styles on first line of the text.
+->to apply the dropcap.
+ex:- p::first-letter{
+        color:red;
+}
+
+::first-line:-
+-> to apply the styles on the first line of the paragraph.
+ex:- p::first-line{
+        color:red;
+}
+
+::selection:-
+-> used to style the text selected by the user from the keyboard and mouse 
+ex:-p::selector{
+        color:red;
+        background-color:green;
+}
+
+::before and ::after:-
+-> it is used to insert additional information brfore and after an html element.
+-> before ele we want to add a symbol the we write like this:-
+  ex:- h1::before{
+        content:❤;
+  }
+-> after ele we want to add a symbol the we write like this:-
+x:- h1::after{
+        content:❤;
+  }
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
