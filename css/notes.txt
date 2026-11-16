@@ -169,3 +169,91 @@ x:- h1::after{
         content:❤;
   }
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+DATE:14-11-26
+selectors:pseudo-classes:- apply the css styles dynamically.
+        syn:- selector:pseudo classname()
+        :hover
+        :active
+        :focus 
+        for link:- link,visited,hover,active.(LVHA-this order is mandatory)
+        :first-child
+        :last-child
+        :nth-child   (these 3 classes are used with the relation parent and child)
+        :nth-of-type()   -> 
+
+:hover:- after loaded the website we can apply the styles.
+        ex: h1:hover{
+                color:blue;
+                transition:all linear 3s;
+        }
+        transition:- used to apply the css styles smothly in a specified time.
+        syn: transition: howmany_properties speed time;
+        -> to remove the underline we can use text-decoration
+
+:active:- when element is being clicked.(after clicked)
+        -> mostly used for buttons.
+        ex:- button:active{
+                background-color:red;
+        }
+:focus:- applies styles when input element receives focus.it's generally used for forms(inputbox)
+        ex:- input:focus{
+                outline:none;   ->to remove outline of input box.
+                background-color:grey;
+        }
+:link:- used to change the default link color.
+        ex:-a:link{
+                color:red;
+        }
+:visited:- used to change the visited link color.
+        ex:-a:visited{
+                color:yellow;
+        }
+:hover:- when user keep the cursor on the link.
+        ex:- a:hover{
+                color:pink;
+        }
+:active:user clicked on the link.
+        ex:-a:active{
+                color:gold;
+        }
+:first-child:- to apply the styles on the first child only.
+        ex:- ol li:first-child{
+                color:red;
+        }
+:last-child:- to apply the styles on the last child only.
+        ex:- ol li:last-child{
+                color:red;
+        }
+:nth-child:- to apply the styles on the specified element
+        ex:- ol li:nth-child(2){
+                color:red;
+        }
+        ex:- ol li:nth-child(even){
+                color:red;
+        }
+        ex:- ol li:nth-child(odd){
+                color:red;
+        }
+        ex:- tr:nth-child{
+                color:yellow;
+        }
+        ex:- ol li:nth-child(2n){     -> on 2 table elements
+                color:red;
+        }
+:nth-of-type():- among group of elements which element do you want to style
+        ex:- h1:nth-of-type(2){
+                color:blue;
+        } --> it will style the second h1 element but it should be second element.
+:checked:- while using chekbox or radio button
+        ex:-input:checked{
+                accent-color:red;
+        }
+:vlid:- when input is valid value these styles are applies
+        ex:input:valid{
+                background-color:green;
+        }
+:invalid:-when input is invalid value these styles are applies
+        ex:input:valid{
+                background-color:red;
+        }
+:disabled:- it is used on the submmit button.
