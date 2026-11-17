@@ -179,7 +179,7 @@ selectors:pseudo-classes:- apply the css styles dynamically.
         :first-child
         :last-child
         :nth-child   (these 3 classes are used with the relation parent and child)
-        :nth-of-type()   -> 
+        :nth-of-type()   -> among group of elements.
 
 :hover:- after loaded the website we can apply the styles.
         ex: h1:hover{
@@ -257,3 +257,94 @@ selectors:pseudo-classes:- apply the css styles dynamically.
                 background-color:red;
         }
 :disabled:- it is used on the submmit button.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+DATE:- 16-11-26
+
+transform property:-
+   -> used to move, rotate,scale, and skew the html element
+   -> types of css transform properties:
+        1. scale
+        2.rotate
+        3.move
+        4.skew
+
+-->transform:scale:-
+img:hover{
+            /* transform: scalex(2);     # for width
+            transform: scaley(0.5);  */   # for height
+            transform: scale(2,2);        # for width and hight
+            transition: all linear 5s;     # to move slowly
+        }
+-->transform:rotate:-
+        -> to fix the origin point we need to use it in img. ex:- transform-origin: top right;
+        ex:-transform: rotatex(180deg);
+            transform: rotatey(180deg); 
+
+            transform: rotate(360deg);
+            transform: scale(3,3) rotate(360deg); 
+-->move:-
+ transform:translate():-  
+        ex:- transform: translatex(200px);  +ve values for down.
+            transform: translatey(200px);
+NOTE:- to apply the parent values to child we use inherit.
+        ex:-wide:inherit;
+-->skew:- transform:skew() -> to bend the html element
+        ex:-transform: skew(45deg,90deg);
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
+DATE:-17-11-26
+css color properties:-
+-> browser supports 140 colors names only. so we use color properties.
+        1.color names
+        2.hexa-decimal method
+        3.rgb() function.
+        4.rgba()
+
+
+->hexa-decimal method:- 0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f  ->(most recommanded method)
+        ->it starts with # symbol
+        ex:-  #rrggbb    ->red green blue
+        background-color: #ff0000;
+            background-color: #00ff00;
+            background-color: #0000ff;
+            background-color: #000000;
+            background-color: #ffffff;
+            background-color: #00afbf;
+            background-color: #005500;
+
+        0- dark 
+        f-light
+
+->rgb() ->red,green,blue
+        red-> 0 to 255
+        green-> 0 to 255
+        blue-> 0 to 255
+        here: 0-> dark and 255-> light
+        ex:-p{
+            font-size: 20px;
+            font-family: cursive;
+            text-align: justify;
+            margin: 50px;
+            background-color: rgb(255,0,0);
+            background: rgb(255,255,0);
+
+        }
+->rgba():- when we use we can see the background image ,that means we can transpent the color.
+        -> 0 -> no color
+        -> 1 -> full color
+        -> here a means alpha.
+        ex:- p{
+            font-size: 20px;
+            font-family: cursive;
+            text-align: justify;
+            margin: 50px;
+            background-color: rgba(255,0,0,0.2); -> here 20% red color is applied.
+                                                    -> 0.5 means 50% color is applied.
+
+        }
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+
+
+
